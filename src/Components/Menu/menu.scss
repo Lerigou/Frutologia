@@ -1,0 +1,60 @@
+@import '../../css/styles.scss';
+
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.174);
+    position: fixed;
+    background-color: #ffffff;
+    
+
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        width: 80vw;
+
+        a {
+                text-decoration: none;
+                color: $brown;
+            }
+
+        .nav-right{
+            font-size: 20px;
+            font-weight: 400;
+
+            .nav-item:hover{
+                font-weight: bold
+            }
+        }
+
+        .nav-left{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            
+            font-size: 15px;
+
+                .nav-item{
+                    padding: 10px;
+                }
+
+                .nav-item:hover{
+                    font-weight: bold
+                }
+                .nav-item:active{
+                    border-radius: 7%;
+                 background-color: $yellow;
+                }
+
+        }
+    }
+
+    
+}
+
