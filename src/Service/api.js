@@ -10,6 +10,6 @@ export const getFruit = async (name) => {
     return response.data;
   } catch (error) {
     console.error(error);
-    throw new Error('Failed to fetch fruit data');
+    throw new Error('Erro ao pesquisar fruta');
   }
 };

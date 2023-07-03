@@ -1,0 +1,69 @@
+@import "../../css/styles.scss";
+
+.dialog-feedback {
+
+    .css-1t1j96h-MuiPaper-root-MuiDialog-paper{
+        border-radius: 29px !important;
+        border: 4px solid $brown;
+        width: get-vw(729px);
+        
+    }
+
+    .dialog-feedback-title {
+        color: $brown;
+        background-color: $pink;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2.4px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .close-dialog-feedback {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+
+            img {
+                width: 70%;
+            }
+        }
+    }
+
+    .dialog-feedback-body {
+        background-color: $pink;
+
+
+        p {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.2px;
+        }
+
+        .feedback-phone {
+            border: 1px solid red;
+        }
+
+        .feedback-mail{
+            border: 1px solid red;
+
+        }
+
+        .feedback-box{
+            border: 1px solid red;
+
+        }
+
+    }
+
+
+
+
+
+
+}
