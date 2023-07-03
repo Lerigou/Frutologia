@@ -1,6 +1,18 @@
-<svg width="257" height="251" viewBox="0 0 257 251" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="257" height="251" fill="url(#pattern0)"/>
+<svg width="325" height="319" viewBox="0 0 325 319" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g filter="url(#filter0_d_13_341)">
+<rect x="32" y="10" width="257" height="251" fill="url(#pattern0)" shape-rendering="crispEdges"/>
+</g>
 <defs>
+<filter id="filter0_d_13_341" x="0" y="0" width="325" height="319" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="2" dy="24"/>
+<feGaussianBlur stdDeviation="17"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.3375 0 0 0 0 0.259362 0 0 0 0 0.237656 0 0 0 0.15 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_13_341"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_13_341" result="shape"/>
+</filter>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_13_341" transform="matrix(0.00078125 0 0 0.000799925 0 -0.000753237)"/>
 </pattern>

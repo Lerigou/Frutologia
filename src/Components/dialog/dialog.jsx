@@ -14,15 +14,15 @@ import cancel from '../../Assets/cancel.svg';
 
 export default function DialogFruit({ fruitData, open, onClose }) {
     if (fruitData === null) {
-        return null; // ou qualquer tratamento necessário quando fruitData é nulo
+        return null; 
       }
 
     const { name, family, order, genus, nutritions } = fruitData;
 
     const handleClose = () => {
+      window.location.reload();
       onClose();
     };  
-
     
     return (
       <Dialog open={open} onClose={onClose} className="dialog">
