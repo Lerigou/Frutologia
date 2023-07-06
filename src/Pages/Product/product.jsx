@@ -45,9 +45,6 @@ export default function Product() {
                                         outras informações nutricionais. </p>
                                 </div>
                             </div>
-                            <div className="pink-img">
-                                <img src={Table} />
-                            </div>
                         </div>
                     </div>
 

@@ -1,27 +1,102 @@
 .faq {
-
-
+    padding-top: 90px;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    margin: 0 auto;
+    width: get-vw(1440px);
+    max-width: 1400px;
+    margin-top: 10%;
 
-    img {
-        width: get-vh(520px);
-    }
+    .faq-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 80vw;
+
+        .faq-title{
+            text-align: center;
+            gap: 30px;
+            
+            h1 {
+                font-size: 40px;
+            }
+            
+            p {
+                font-size: 32px;
+            }
+        }
+
+        .faq-content{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+
+            .faq-accordions{
+                height: fit-content;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
     
+            .faq-img{
+    
+                img {
+                    width: get-vh(520px);
+                }
+            }
+        }
+
+        
+    }
+}
+
+
+@media screen and (max-width: 1280px){
+
+    .faq {    
+        .faq-container {    
+            .faq-content{      
+                flex-direction: column;
+                .faq-accordions{   
+
+                }
+        
+                .faq-img{
+                    display: none;
+                }
+            }
+    
+            
+        }
+    }
 
 }
 
-.faq-title{
+@media screen and (max-width: 940px) {
 
-    margin-top: 240px;
-    margin-bottom: 80px;
+    .faq {    
+        
+        .faq-container { 
+            margin: 0 auto;
 
-    h1 {
-        font-size: 40px;
-    }
-    p {
-        font-size: 32px;
+            .faq-content{      
+                .faq-accordions{ 
+                }
+        
+                .faq-img{
+                    width: 80%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+    
+            
+        }
     }
 }
+

@@ -1,24 +1,69 @@
 @import '../../css/styles.scss';
 
-.accordion {
 
-    margin-left: 16px;
+.accordion-container{
+
+   
+.accordion {
     margin:15px 0 15px 0;
-    width: 650px;
+    width: get-vw(650px);
 
     border-radius: 20px !important;
     border: 4px solid $brown;
 
     .title-accordion {
         border-bottom: 1px solid $brown;
-        margin-left: 3px;
-        margin-right: 3px;
+        
+        .title-text{
+            padding: 5px !important;
+            font-size: 24px !important;
+            font-family: 'Montserrat', sans-serif !important;
+            letter-spacing: 1.2px;
+            line-height: 30px;
+            
+        }
+
+        .accordion-body{
+            padding: 5px !important;
+
+            .accordion-body p {
+                font-family: 'Montserrat', sans-serif !important;
+                font-size: 24px !important;
+                letter-spacing: 1.2px !important;
+                line-height: 30px !important;
+            }
+            
+
+        }
     }
 
     img {
         width: 24px;
     }
+}
 
-    
+}
 
+
+@media screen and (max-width: 1280px) {
+
+    .accordion-container{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        .accordion{
+            width: 100% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .accordion-container{
+        .accordion{
+            margin:15px 0 15px 0;
+        }
+    }
 }
