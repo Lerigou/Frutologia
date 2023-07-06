@@ -1,7 +1,7 @@
 import React from "react";
 import "./purpose.scss";
-import Raspberrry from "../../Assets/icon-raspbarry.svg"
-import Lemon from "../../Assets/icon-lemon.svg"
+import Raspberrry from "../../Assets/icon-raspbarry.svg";
+import Lemon from "../../Assets/icon-lemon.svg";
 
 export default function Purpose() {
     return (

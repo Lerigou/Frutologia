@@ -39,7 +39,7 @@ export default function Home() {
           <Input onSearch={handleSearch} />
         </div>
       </div>
-      <div className="data">
+      <div className="img-div">
         <img src={cherry} alt="" />
       </div>
       <DialogFruit fruitData={fruitData} open={dialogOpen} onClose={handleCloseDialog} />
