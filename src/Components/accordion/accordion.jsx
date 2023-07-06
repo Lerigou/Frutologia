@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import iconOpen from '../../Assets/icon-open.svg';
 import iconClose from '../../Assets/icon-close.svg';
 
-export default function ControlledAccordions() {
+export default function Accordions(props) {
   const [expanded, setExpanded] = React.useState(false);
   const [icon, setIcon] = React.useState(iconOpen);
 
@@ -18,6 +18,7 @@ export default function ControlledAccordions() {
 
   return (
     <div className='accordion-container'>
+
         <Accordion className="accordion" expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
             <AccordionSummary
                 expandIcon={<img src={icon} />}
@@ -25,37 +26,15 @@ export default function ControlledAccordions() {
                 id="panel1bh-header"
                 className="title-accordion"
             >
-                <Typography className='title-text'>
-                    A fruta que você pesquisou não apareceu?
-                </Typography>
-                
-            </AccordionSummary>
-            <AccordionDetails>
-                <Typography className='accordion-body'>
-               <p> Nossa ferramenta não dispõem de algumas frutas devido a mudança causada pela regionalização, 
-                tente outro nome. Verifique também se escreveu corretamente o nome da fruta que deseja consultar. 
-                </p>
-                </Typography>
-            </AccordionDetails>
-        </Accordion>
-
-        <Accordion className="accordion" expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-            <AccordionSummary
-                expandIcon={<img src={icon} />}
-                aria-controls="panel1bh-content"
-                id="panel1bh-header"
-                className="title-accordion"
-            >
                 <Typography className='title-text' >
-                    Onde entrar em contato?
+                    {props.titleFaq}
                 </Typography>
                 
             </AccordionSummary>
             <AccordionDetails>
                 <Typography className='accordion-body'>
                     <p>
-                Ao final da página você encontra a opção de enviar um comentário. 
-                Clicando aqui você será direcionado para lá! 
+                        {props.descriptionFaq}
                     </p>
                 </Typography>
             </AccordionDetails>
