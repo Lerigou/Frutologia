@@ -54,15 +54,12 @@
 }
 
 
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1000px){
 
     .faq {    
         .faq-container {    
             .faq-content{      
                 flex-direction: column;
-                .faq-accordions{   
-
-                }
         
                 .faq-img{
                     display: none;

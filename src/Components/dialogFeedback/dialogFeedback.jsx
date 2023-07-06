@@ -24,18 +24,22 @@ export default function DialogFeedback({ open, onClose }) {
         </p>
 
         <div className="feedback-phone">
-            <p>Telefone *</p>
-            <input className="input-feedback"></input>
+          <p>Telefone *</p>
+          <input className="input-feedback" required></input>
         </div>
 
-        <div styleName="feedback-mail">
-            <p>Email *</p>
-            <input className="input-feedback"></input>
+        <div className="feedback-mail">
+          <p>Email *</p>
+          <input className="input-feedback" required></input>
         </div>
 
-        <div styleName="feedback-box">
-            <p>Seu comentário</p>
-            <textarea></textarea>
+        <div className="feedback-box">
+          <p>Seu comentário!</p>
+          <textarea className="textarea-feedback"></textarea>
+        </div>
+
+        <div className="div-btn">
+          <button className="btnFeedback" onClick={handleClose}>Enviar</button>
         </div>
       </DialogContent>
     </Dialog>
