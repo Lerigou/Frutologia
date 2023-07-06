@@ -10,7 +10,9 @@
     border: 4px solid $brown;
 
     .title-accordion {
-        /*border-bottom: 2px solid $brown;*/
+        border-bottom: 1px solid $brown;
+        margin-left: 3px;
+        margin-right: 3px;
     }
 
     img {

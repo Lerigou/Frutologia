@@ -6,9 +6,17 @@ import iconBanana from "../../Assets/icon-banana-group.svg";
 export default function faq() {
 
   return (
-    <div className="faq">
+    <div>
+      <div className="faq-title">
+        <h1>FAQ</h1>
+        <p>Ficou com duvidas?</p>
+      </div>
+      
+      <div className="faq">
         <Accordion />
         <img src={iconBanana} />
+      </div>
     </div>
+    
   );
 }
