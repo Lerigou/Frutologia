@@ -3,10 +3,10 @@
 .navbar{
     display: flex;
     width: 100%;
+    height: fit-content;
     justify-content: center;
     align-items: center;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.174);
-    position: fixed;
     background-color: #ffffff;
     z-index: 1;
     
@@ -15,7 +15,7 @@
         align-items: center;
         justify-content: space-between;
         height: 70px;
-        width: 80vw;
+        width: get-vw(1440px);
 
         a {
                 text-decoration: none;
@@ -47,6 +47,7 @@
                 .nav-item:hover{
                     font-weight: bold
                 }
+
                 .nav-item:active{
                     border-radius: 7%;
                  background-color: $yellow;
@@ -58,3 +59,24 @@
     
 }
 
+@media screen and (max-width: 768px){
+
+    .navbar{
+        justify-content: center;
+
+        .nav{
+            width: 100%;
+            justify-content: center;
+
+            .nav-left{
+                display: none;
+    
+                .nav-item{
+                    display: none;
+    
+                }
+            }
+        }
+        
+    }
+}
