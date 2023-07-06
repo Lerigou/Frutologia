@@ -24,7 +24,9 @@ export default function App() {
         <div id="faq">
           <Faq />
         </div>
-        <Footer />
+        <div id="footer">
+          <Footer />
+        </div>
       </div>
     </Router>
   );
