@@ -2,41 +2,40 @@ import React from "react";
 import "./menu.scss";
 
 export default function Menu() {
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <div className="navbar">
       <div className="nav">
         <div className="nav-right">
           <div className="nav-item">
-            <a href="#home" onClick={() => scrollToSection("home")}>
+            <a href="#home">
               Frutologia
             </a>
           </div>
         </div>
         <div className="nav-left">
           <div className="nav-item">
-            <a href="#home" onClick={() => scrollToSection("home")}>
+            <a href="#home">
               Pesquisar
             </a>
           </div>
           <div className="nav-item">
-            <a href="#purpose" onClick={() => scrollToSection("purpose")}>
+            <a href="#purpose">
               Missão
             </a>
           </div>
           <div className="nav-item">
-            <a href="#product" onClick={() => scrollToSection("product")}>
+            <a href="#product" >
               Sobre
             </a>
           </div>
           <div className="nav-item">
-            <a href="#faq" onClick={() => scrollToSection("faq")}>
+            <a href="#faq" >
+              Dúvidas
+            </a>
+          </div>
+          <div className="nav-item">
+            <a href="#footer" >
               Contato
             </a>
           </div>
