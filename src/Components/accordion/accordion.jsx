@@ -17,7 +17,7 @@ export default function ControlledAccordions() {
   };
 
   return (
-    <div >
+    <div className='accordion-container'>
         <Accordion className="accordion" expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
             <AccordionSummary
                 expandIcon={<img src={icon} />}
@@ -25,15 +25,16 @@ export default function ControlledAccordions() {
                 id="panel1bh-header"
                 className="title-accordion"
             >
-                <Typography >
+                <Typography className='title-text'>
                     A fruta que você pesquisou não apareceu?
                 </Typography>
                 
             </AccordionSummary>
             <AccordionDetails>
-                <Typography>
-                Nossa ferramenta não dispõem de algumas frutas devido a mudança causada pela regionalização, 
+                <Typography className='accordion-body'>
+               <p> Nossa ferramenta não dispõem de algumas frutas devido a mudança causada pela regionalização, 
                 tente outro nome. Verifique também se escreveu corretamente o nome da fruta que deseja consultar. 
+                </p>
                 </Typography>
             </AccordionDetails>
         </Accordion>
@@ -45,15 +46,17 @@ export default function ControlledAccordions() {
                 id="panel1bh-header"
                 className="title-accordion"
             >
-                <Typography >
+                <Typography className='title-text' >
                     Onde entrar em contato?
                 </Typography>
                 
             </AccordionSummary>
             <AccordionDetails>
-                <Typography>
+                <Typography className='accordion-body'>
+                    <p>
                 Ao final da página você encontra a opção de enviar um comentário. 
                 Clicando aqui você será direcionado para lá! 
+                    </p>
                 </Typography>
             </AccordionDetails>
         </Accordion>
